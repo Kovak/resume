@@ -2,84 +2,90 @@
 \usepackage[hidelinks]{hyperref}
 
 \begin{document}
-\name{\Large Samuel Brotherton}
+\name{\Large Jacob Kovac}
 \begin{resume}
     \section{\mysidestyle Contact\\Information}
 
-    Phone: (801) 927-0219       \hfill LinkedIn: \url{https://www.linkedin.com/in/sbrother} \\
-    \noindent Email: sbrother@gmail.com  \hfill Address: 7771 Buckboard Drive, Park City, UT 84098 \vspace{0mm}\\\vspace{-4.5mm}
-
-    \section{\mysidestyle Education}
-
-    \textbf{Harvard University}, Cambridge, MA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{B.A., Mathematics and East Asian Studies} \hfill \textbf{Sep 2008 -- May 2012}\\
-    Received highest honors for senior thesis analyzing over 200,000 Chinese
-    blog posts, algorithmically detecting mutations in the Chinese language in
-    response to censorship. Completed coursework in abstract algebra,
-    Galois theory, topology, real and complex analysis, probability theory, and
-    linguistics.
+    Phone: (770) 296-0666       \hfill GitHub: \url{https://github.com/Kovak} \\
+    \noindent Email: jacob@chaosbuffalo.com  \hfill Address: 8700 SW Borders St, Tigard, OR 97223 \vspace{0mm}\\\vspace{-4.5mm}
 
     \section{\mysidestyle Professional\\Experience}
 
-    \textbf{Authentic Artists}, San Francisco, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Director of Machine Learning} \hfill \textbf{Sep 2019 -- present}\\
-    Lead a remote (US-based) engineering team to build AI-powered audiovisual
-    experiences, including a cloud deep learning server for song generation, a
-    C++ constraint/transformation library for imposing additional musical style
-    on deep learning output, an automated Max/Ableton session for audio
-    generation, and a dynamic Unreal scene to generate music videos. Coordinated
-    with creative and executive teams to balance engineering and IP development
-    with artistic and business goals.
+    \textbf{Chaos Buffalo}, Portland, OR \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Prinicipal and Founder} \hfill \textbf{Aug 2015 -- Present}\\
+    Chaos Buffalo is a lifestyle company dedicated to providing optimization, integration, 
+    and platform support for software development projects mainly in the entertainment industry. 
+    Some of my most recent work includes:
+\begin{itemize}
+\item Radiohead's \textsl{Kid A Mnesia Exhibition} (All Releases): I was the lead system developer on this project. My responsibilities included: the save state system, game flow, design and development on the user interface, the spawning system, and supporting the content design teams in their implementations using these systems. I was also responble for identifying and performing optimizations and determining the appropriate graphical settings for each platform.
+\item Annapurna Interactive's \textsl{The Artful Escape} (All Releases): I was lead developer for the Switch port of this game and worked on optimization for all platforms. I designed a custom instancing solution that  brought draw-calls down by a factor of 10 in the most pathological scenes without sacrificing any visual quality. I worked closely with the design team to identify areas where asset optimization or material optimization was necessary and to communicate the potential solves and their tradeoffs to keep within the frame budget.
+\item Annapurna Interactive's \textsl{I Am Dead} (Switch Release): I was soley responsible for the Switch port of this game. A custom instancing system designed to respect the unique matruska-doll 
+rendering of this game brought the Switch port from a low, single digit fps to a consistent 30. Other services included material solves when platform differences resulted in incorrect rendering, platform-specific feature implementation, and working closely with art and content when it was necessary to change scenes after optimization opportunities had been exhausted.
+\end{itemize}
+I have also worked on a handful of early stage products that did not make it to release:
+\begin{itemize}
+\item Generative music visualizer in Unreal that produced randomized 'music videos' from the raw Magenta-produced midi-stream as well as metadata about stylistic choices related to audio rendering.
+\item Vocal chatbot visualizer in Unreal, integrating Speech Graphics for facial animations, and a React-Redux dialogue tree editor.
+\item Data pipeline for the normalization of CT scan data
+\item React-Redux client for a pharmaceutical pricing platform specializing in European pharmaceutical launches. I worked closely with the product's economist founder to systematize the custom graphs and data visualizations he had developed over his career.
+\item An early stage Swift-based vocal chatbot client designed to assist in the care of people with memory issues.
+\end{itemize}
 
-    \textbf{Cairn Labs}, Salt Lake City, UT \vspace{2mm}\\\vspace{1mm}%
-    \textsl{President and Founder} \hfill \textbf{Jan 2016 -- Feb 2020}\\
-    Lead a cross-functional team of 4-6 to design and build software
-    for clients, with a focus on applications that integrate
-    state-of-the-art NLP and machine learning. Notable projects include:
+    \textbf{Primorca (Startup, Seed Funding)}, Portland, OR \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Software Architect} \hfill \textbf{Jan 2018 -- Jan 2019}\\
+  Primorca was a startup building a real-time cryptocurrency trading platform. I was hired to architect the application cloud being assembled out of Elixir, C++, and Golang services.
+The resulting microservice swarm was capable of handling up to 60,000 messages a second during load testing with our typical work loads sitting in the 30,000 to 40,000 range. 
 
     \begin{itemize}
-    \item A deep learning based conversational UI framework to power
-      will.i.am's new wireless earphones and other applications. Backed by
-      Python, Tensorflow, and other technologies. Supports multiple languages,
-      extensible dialogue flows, and includes a type system that integrates with
-      a custom knowledge base. Our software had a significant role in the
-      success of the client's recent \$117M fundraising round
-      (\url{https://goo.gl/iMvVTt}).
-    \item An intelligent agent for a healthcare client that performs realtime
-      conversational analysis from raw audio. Uses an open source library I
-      built for training and serving machine learning models from Elixir
-      (\url{https://github.com/cairn-labs/mlem}).
-    \item A risk scoring server for a client in the car insurance industry,
-      collecting realtime driving data and assigning machine-learning based
-      driver risk scores at a rate of 3000+ qps.
-    \item An advertising server to display appropriate concert ticket offers
-      to users, based on user-level and page-level contextual targeting. Backed
-      by Elixir/Phoenix, Python, PostGIS, and React.js.
+    \item Worked with domain-experts to create message specifications to the standards and preferences of the financial industry..
+    \item Created idiomatic APIs for intra-application communication in Golang, Elixir, and C++.
+    \item Created a container-orchestrator agnostic watchdog for service management in Elixir.
+    \item The majority of my time was spent building the real-time, concurrent computational service that allowed trading strategy designers to assemble small single-threaded units of computation into DAGs without having to consider all the details of concurrency and multithreading.
+    \item I designed the back-testing system that would allow the stack to run in historical data collected by the real-time system. 
     \end{itemize}
+\bgroup\obeylines
+t
+\egroup
+    \textbf{Trebella (Startup, Founder Funded)}, Portland, OR \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Employee 1} \hfill \textbf{Jan 2016 -- Feb 2017}\\
+Trebella created a piano learning game designed to provide an interactive and responsive learning experience with any MIDI piano and digitized sheet music. I took the founder-made prototype and optimized it so that it ran in real-time under all workloads while also increasing the accuracy and completeness of the performance grading engine. I also overhauled the sheet-music rendering to support fine-grained visualizations of a user's performance.
 
-    \textbf{Google}, Venice, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Software Engineer III} \hfill \textbf{Jun 2014 -- Mar 2016}\\
-    Worked on a small team using natural language processing and other machine
-    learning techniques to improve advertisement quality. Led a 20\% project
-    related to mining semantic information from web data, which was adopted by
-    several teams across different product areas. Built a named entity
-    recognition system in C++ and a link detection algorithm that runs on very
-    large graphs; contributed to a topic model for clustering semantic entities.
 
-    \textbf{Whisper}, Venice, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Software Engineer and Data Scientist} \hfill \textbf{Mar 2013 -- Apr 2014}\\
-    Sole data scientist at a rapidly expanding social media startup
-    seeing upwards of three billion monthly pageviews. Designed and built an NLP
-    service to extract topics and tags from posts, predict image searchterms
-    from unstructured text, and target content to users. Implemented a new
-    geographic search system using PostGIS that decreased search time by
-    90\%. Worked closely with the front and backend development teams, writing
-    production code in Erlang and Python.
+    \textbf{Bextr (Startup, Seed Funding)}, Salt Lake City, UT \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Employee 1} \hfill \textbf{Jan 2014 -- March 2015}\\
+Bextr was an advertising technology startup focused on physical installations. I was sole developer on a cloud connected 50 inch touch-screen mall directory that ran on Windows, Android, and Linux for the Valley Fair Mall in Salt Lake City.
 
+    \textbf{UNICEF/WHO Geolocating Nutrition Survey Application}, Salt Lake City, UT \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Android Application Developer} \hfill \textbf{Jan 2013 -- Dec 2013}\\
+I worked with UNICEF and WHO as the sole developer of an Android tablet application implementing the SMART nutrition survey standards for field use in Nigeria. The application was written in Python using the Kivy framework and designed to complement the existing in-house Django development team.
+
+ \section{\mysidestyle Open Source\\Experience}
+
+\textbf{Kivy Framework} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Core Developer} \hfill \textbf{Jan 2014 -- July 2018}\\
+The Kivy framework enables the development of graphical Python applications for Android, iOS, and traditional desktop environments. My focus was on the GL ES 2.0 graphics pipeline. I mentored Google Summer of Code students in 2014 and 2015, and spoke at Pycon in 2016 on behalf of the organization.
+
+\textbf{KivEnt Game Engine} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Creator and Lead Developer} \hfill \textbf{Jan 2013 -- July 2018}\\
+KivEnt is a pure entity-component architectured engine that provides a streamlined framework for producing games in Python with optimized low-level C structs and Cython routines for processing and memory efficiency. Some technical highlights of the engine include:
+   \begin{itemize}
+   \item Static arena allocating memory system that enabled predictable control over the amount of memory being used by low level game objects and ensured that entities with similar processing patterns were stored contiguously in memory for cache coherency.
+    \item Advanced 2d batching renderers that allowed thousands of sprites to be rendered even on mobile hardware of the early 2010s, up to tens of thousands for typical desktop hardware of the time. 
+   \end{itemize}
+\textbf{Minecraft Modding} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Project Lead} \hfill \textbf{Jan 2016 --  Present}\\
+I’ve been leading the development of Minecraft mods that expand gameplay features for many years. My 14 mods collectively have around ~10 million downloads and involve contributions of code, art, and localizations from a dozen individuals. Some highlights include:
+    \begin{itemize}
+	\item An alternative modern shader-based entity rendering pipeline with support for fbx animations and a modern animation blending system with built-in networking support. 
+	\item An extensible key-frame based particle animation system with a fully networked in-game editor to produce the animations.
+	\item A generative narrative system built on top of existing world generation that allows designers to annotate structures with additional metadata that will be preserved and uniquely identified facilitiating the creation of world-aware narrative objects such as quests, dialogues, or lore.
+    \end{itemize}
 
     \section{\mysidestyle Programming\\Experience}
 
-    \emph{Languages:} Python, C++, Erlang, Elixir, Mathematica,  C\#, F\#, Bash, C, \LaTeX \\
-    \emph{Server Technology:} Kubernetes, Docker, GCP, Cassandra, Redis, PostgreSQL, ElasticSearch/Lucene
+    \emph{Languages:} C++, Elixir, Bash, Go, Python, Java, Cython, C, GLSL, Javascript, Swift, Typescript \\
+    \emph{Frameworks and Libraries:} Phoenix Framework, Unreal Engine, RabbitMQ, React.js, Kivy, Docker, Flask, WWise, OpenGL \\
+    \emph{Platforms:} Windows, Linux, OSX, iOS, Playstation 5, Nintendo Switch \\
+
 \end{resume}
 \end{document}
